@@ -1,0 +1,113 @@
+ html {
+  /* px means "pixels". The base font size is now 10 pixels high */
+  font-size: 10px;
+  /* Replace PLACEHOLDER with the font-family property value you got from Google Fonts */
+  font-family: "Tagesschrift", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+ 
+ /*The font-family property sets the font(s) you want to apply to 
+ your HTML. This rule defines a global base font and font size
+  for the whole page. All elements inside the <html> element will inherit the same 
+  font-size and font-family.*/
+
+html{
+    background-color: rgb(180, 195, 195);  /*background page color*/
+}
+
+body{    /* code sets new values for several properties of the <body> element */
+    width: 750px;
+    margin: 20px auto; /*top-bottom,left-right*/
+    background-color: aquamarine;
+    padding: 0px 20px 20px 20px; /*top,right,bottom,left*/
+    border: 5px solid black;;
+}
+
+img{   /*centering the image in the page*/
+    display:block;
+    margin: 0 auto;
+    max-width: 100%;  /*not extend the body size*/
+}
+
+/*The <body> element is a block element, meaning it takes up space on 
+the page and can accept margin, padding, and other box properties.
+ <img> (image) elements, on the other hand, are inline elements:
+  by default, they don't accept margin values in the same way block
+elements do. For the auto-margin trick to work on this image, we must 
+give it block-level behavior by using display: block;.*/
+ 
+ h1{
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 20px;
+    margin: auto;
+    padding: 10px 0;   /*top-bottom , left-right*/
+    color: blueviolet;
+    text-shadow: 3px 3px 6px black; /*hor offset,ver offset,blur radius,base color*/
+    font-style: italic;
+ }
+
+ .p1{
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+ }
+
+ li{
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+ }
+
+ #p2{
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
+ }
+
+ .p3{
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-style: oblique;
+    color: red;
+ }
+ 
+ .done{  /*CSS class called .done that will style any element it's applied to, making it look like a completed task with green text color and a strikethrough.*/
+    color: darkgray;
+    text-decoration: line-through solid black 2px;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /*
+    p{   
+        font-family: sans-serif;
+        color: blueviolet;
+        width: 500px;
+        border: 1px solid black;
+    }
+    .p1{
+        color: red;
+    }
+    #p2{
+        color: brown;
+    }
+    li{
+        background-color: aqua;
+        margin-bottom: 5px;
+        border: 1px solid black;
+    }*/
+
+    /* p is a selector - selects the element(s) to style.
+       The line inside the curly braces ({ }) is called a declaration – it sets a value for a specific property.
+       The whole structure is called a ruleset.*/
+    
+    /*Within a ruleset, you must use a semicolon (;) to separate 
+      one declaration from the next. Within each declaration,
+     you must use a colon (:) to separate the property and its value.*/
